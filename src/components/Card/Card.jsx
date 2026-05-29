@@ -1,11 +1,15 @@
-import styles from './card.module.css'
+import styles from "./card.module.css"
 
-function Card() {
+function Card({nome = 'nenhum', curso='nenhum'}){
+
     return(
-        <>
-            <p>Deu bom!</p>
-        </>
-    )
+
+        <div className={styles.card}>
+            <img className={styles.cardImage} src="https://placehold.co/400" alt="foto de perfil" />
+            <h2 className={styles.cardTitle}>Nome: {nome}</h2>
+            <p className={styles.cardText}>Curso: {curso}</p>
+        </div>
+    );
 }
 
 export default Card

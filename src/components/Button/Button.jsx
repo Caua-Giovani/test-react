@@ -1,9 +1,9 @@
 import styles from './button.module.css'
 
-function Button() {
+function Button(props) {
     return(
         <>
-            <p>Deu bom!</p>
+            <button>{props.texto}</button>
         </>
     )
 }

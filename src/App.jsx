@@ -10,10 +10,11 @@ function App() {
 
   return (
     <>
-      <Alunos />
-      <Card />
-      <Button />
-      <Lista />
+      <Alunos nome = "Teste" idade = '18'/>
+      <Alunos nome = "Teste" idade = '18'/>
+      <Button texto = "Teste"/>
+      <Button texto = "Teste"/>
+      <Card nome = "Teste" curso="desenvolvimento de sistemas"/>
     </>
   )
 }
