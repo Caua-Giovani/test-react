@@ -4,7 +4,11 @@ function UseStateHook(){
     const [nome, setNome] = useState('Clique em mudar')
     const [idade, setIdade] = useState(0)
     const [eFalso, seteFalso] = useState(false)
+    const [fruta, setFruta] = useState('Clique no mostrar')
 
+    const mostrarFruta= () =>{
+        setFruta('Abacaxi')
+    }
 
     const atualizarNome= ()=>{
         setNome('Cauã');
@@ -28,6 +32,9 @@ function UseStateHook(){
 
             <p>É Falso: {eFalso ? "Sim" : "Não"}</p>
             <button onClick={atualizarEstado} >Verificar</button>
+
+            <p>Fruta Secreta: {fruta}</p>
+            <button onClick={mostrarFruta} >Mostrar</button>
         </>
     )
 }
@@ -35,7 +42,11 @@ function UseStateHook(){
 export default UseStateHook
 
 
-// const [contador, setContador] = useState(0)
+// import styles from "./contador.module.css"
+// import { useState } from "react"
+
+// function Contador(){
+//     const [contador, setContador] = useState(0)
 
 //     const adicionar = () =>{
 //         setContador(contador+1)
@@ -55,3 +66,8 @@ export default UseStateHook
 //             <button onClick={subtrair} >Subtrair</button>
 //         </>
 //     )
+// }
+
+// export default Contador
+
+

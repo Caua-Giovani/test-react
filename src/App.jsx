@@ -4,6 +4,7 @@ import Button from './components/Button/Button.jsx'
 import Lista from './components/Lista/Lista.jsx'
 import MsgUsuario from './components/MensagemUsuario/MsgUsuario.jsx'
 import UseStateHook from './components/UseStateHook/UseStateHook.jsx'
+import Contador from './components/Contador/Contador.jsx'
 
 import './App.css'
 
@@ -12,7 +13,7 @@ function App() {
   return (
     <>
 
-      <UseStateHook/>
+      <Contador/>
 
     </>
   )
