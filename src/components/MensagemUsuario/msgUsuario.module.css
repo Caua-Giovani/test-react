@@ -1,0 +1,13 @@
+
+
+.naoAutenticado{
+    background-color: red;
+    color: white;
+    margin: 10px 0;
+}
+
+.autenticado{
+    background-color: green;
+    color: white;
+    margin: 10px 0;
+}
