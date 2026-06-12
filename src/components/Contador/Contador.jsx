@@ -15,13 +15,13 @@ function Contador(){
         setContador(contador-1)
     }
     const sortear = () =>{
-        setContador(Math.floor(Math.random() * 50))
+        setContador(Math.floor(Math.random() * 100)+1)
     }
 
 
     return(
         <>
-            <p style={{color:contador == 0 ? 'black': contador > 0 ? 'green' : 'red' }}>{contador}</p>
+            <p style={{color:contador == 0 ? 'black': contador > 0 ? 'green' : 'red' }}>{(contador > 0 && contador < 10) || (contador == 0) ?'0'+contador : contador}</p>
             <button onClick={reiniciar} >Reiniciar</button>
             <button onClick={adicionar} >Acrescentar</button>
             <button onClick={subtrair} >Subtrair</button>
