@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 20px;
+}
+
+p{
+    font-size: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+button{
+    background-color: blueviolet;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px;
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+}
